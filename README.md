@@ -9,7 +9,13 @@ Along with other features it uses clangd and pyright LSPs.
 npm install -g pyright
 ```
 
-### 2. [Install clangd](https://github.com/llvm/llvm-project/tree/main/clang-tools-extra/clangd)
+### 2. Install clang
+
+1. Clone the LLVM repo to $LLVM_ROOT.
+2. Create a build directory, for example at $LLVM_ROOT/build.
+3. Inside the build directory run: cmake $LLVM_ROOT/llvm/ -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra".
+
+[clangd](https://github.com/llvm/llvm-project/tree/main/clang-tools-extra/clangd)
 
 Then copy this configuration to the `$HOME/.config/nvim/init.vim`
 
