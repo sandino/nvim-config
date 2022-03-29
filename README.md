@@ -19,6 +19,12 @@ npm install -g pyright
 2. Create a build directory, for example at `$LLVM_ROOT/build`.
 3. Inside the build directory run: `cmake $LLVM_ROOT/llvm/ -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra"`.
 
+### 4. Install clangd
+
+```bash
+brew install clangd
+```
+
 [clangd](https://github.com/llvm/llvm-project/tree/main/clang-tools-extra/clangd)
 
 Then copy this configuration to the `$HOME/.config/nvim/init.vim`
