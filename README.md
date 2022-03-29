@@ -8,8 +8,12 @@ Along with other features it uses clangd and pyright LSPs.
 ```bash
 npm install -g pyright
 ```
+### 2. Install cmake
 
-### 2. Install clang
+1. Download [cmake installer](https://cmake.org/download/).
+2. Install cmake cli tool `sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install`.
+
+### 3. Install clang
 
 1. Clone the LLVM repo to `$LLVM_ROOT`.
 2. Create a build directory, for example at `$LLVM_ROOT/build`.
